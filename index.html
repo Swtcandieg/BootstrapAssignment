@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Code for a JavaScript class assignment. Due 12042021">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--CSS Link-->
+    <link href="/Tech Bridge Fall Class Assignments/Bootstrap and JS Assignment/style.css" rel="stylesheet"
+        type="text/css">
+
+    <!--JavaScript Link-->
+    <script src="/Tech Bridge Fall Class Assignments/Bootstrap and JS Assignment/script.js"></script>
+
+
+</head>
+
+<body>
+    <!--Row 1-->
+    <section class=" container">
+        <div class="row align-content-center">
+
+            <h1>Bootstrap JS Worksheet</h1>
+        </div>
+
+    </section>
+
+
+    <!--Row 2-->
+    <section class="container">
+        <div class="row align-items-start">
+            <div class="col">
+                <p></p>
+            </div>
+            <div class="col">
+                <h2> Infosys Class Work</h2>
+            </div>
+            <div class="col">
+                <p></p>
+            </div>
+    </section>
+
+
+    <!--Row 3 BOXES-->
+    <section class="container">
+        <div class="row align-items-start">
+
+            <div class="col box1" id="box1"></div>
+
+
+            <div class="col box2" id="box2"></div>
+
+
+            <div class="col box3" id="box3"></div>
+
+    </section>
+
+
+    <!--Row 4 -->
+    <!--Change Button Header-->
+    <section class=" container">
+        <div class="row align-items-start">
+            <div class="col">
+                <p></p>
+            </div>
+            <div class="col">
+                <p>
+                <h3>Change Buttons</h3>
+                </p>
+            </div>
+            <div class="col">
+                <p></p>
+            </div>
+    </section>
+
+    <!--ROW 5 -->
+
+    <!--Change Buttons-->
+    <section class="container">
+        <div class="row ChangeButtonRow">
+            <div class="row align-items-start">
+                <p></p>
+                <!--Button 1-->
+                <div class="col">
+                    <div id="box"></div>
+                    <button type="button" class="btn btn-outline-secondary" onclick="changeButtonOne()">
+                        Change Box 1
+                    </button>
+                </div>
+                <!--Button 2-->
+                <div class="col">
+                    <div id="box"></div>
+                    <button type="button" class="btn btn-outline-secondary" onclick="changeButtonTwo()">
+                        Change Box 2
+                    </button>
+                </div>
+                <!--Button 3-->
+                <div class="col">
+                    <div id="box"></div>
+                    <button type="button" class="btn btn-outline-secondary" onclick="changeButtonThree()">
+                        Change Box 3
+                    </button>
+                </div>
+                <!--Button 4-->
+                <div class="col">
+                    <div id="box"></div>
+                    <button type="button" class="btn btn-primary"
+                        onclick="changeButtonOne(),changeButtonTwo(),changeButtonThree()">Change All</button>
+                </div>
+    </section>
+
+    <!--Row 6 Hide Buttons header-->
+    <section class="container">
+        <div class="row align-items-start">
+            <div class="col">
+                <p></p>
+            </div>
+            <div class="col">
+                <h4>Hide Buttons</h4>
+            </div>
+            <div class="col">
+                <p></p>
+            </div>
+    </section>
+
+    <!--Row 7 Hide Buttons -->
+    <section class="container">
+        <div class="row align-items-start">
+            <!--Button 1-->
+            <div class="col">
+                <p>
+                    <button type="button" class="btn btn-secondary" onclick="hideButtonOne()">
+                        Hide Box 1
+                    </button>
+                </p>
+            </div>
+            <!--Button 2-->
+            <div class=" col">
+                <div id="box"></div>
+                <button type="button" class="btn btn-secondary" onclick="hideButtonTwo()">
+                    Hide Box 2
+                </button>
+            </div>
+            <!--Button 3-->
+            <div class="col">
+                <div id="box"></div>
+                <button type="button" class="btn btn-secondary" onclick="hideButtonThree()">
+                    Hide Box 3
+                </button>
+            </div>
+            <!--Button 4-->
+            <div class="col">
+                <div id="box"></div>
+                <button type="button" class="btn btn-warning"
+                    onclick="hideButtonOne(), hideButtonTwo(), hideButtonThree()">
+                    Hide All
+                </button>
+            </div>
+    </section>
+
+
+    <!--Row 8 Reset/Show All Buttons -->
+    <section class="container">
+        <div class="row align-items-start">
+            <!--Button 1-->
+            <div class="col">
+                <div id="box"></div>
+                <button type="button" class="btn btn-outline-danger" onclick="resetAllButton()"> Reset Colors </button>
+            </div>
+            <!--Button 2-->
+            <div class="col"></div>
+            <!--Button 3-->
+            <div class="col"></div>
+            <!--Button 4-->
+            <div class="col">
+                <div id="box"></div>
+                <button type="button" class="btn btn-success" onclick="showAllButton()"> Show All </button>
+            </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
