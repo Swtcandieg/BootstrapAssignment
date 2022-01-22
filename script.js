@@ -1,6 +1,3 @@
-let firstBox;
-let secondBox;
-let thirdBox;
 let allColors = [
   "#63b598",
   "#ce7d78",
@@ -292,29 +289,34 @@ let allBorders = [
   "outset",
   "ridge",
 ];
+let firstBox;
+let secondBox;
+let thirdBox;
+let newBorder;
 
-function changeButtonOne() {
+function changeButtonOne(id) {
   firstBox = document.getElementById("box1");
   firstBox.style.background =
     allColors[Math.floor(Math.random() * allColors.length)];
   newBorder =
     allBorders[Math.floor(Math.random() * allColors.length)] +
-    " 2px " +
+    "25px" +
     allColors[Math.floor(Math.random() * allColors.length)];
   firstBox.style.border = newBorder;
 }
 
-function changeButtonTwo() {
+function changeButtonTwo(id) {
   secondBox = document.getElementById("box2");
   secondBox.style.background =
     allColors[Math.floor(Math.random() * allColors.length)];
   newBorder =
     allBorders[Math.floor(Math.random() * allColors.length)] +
-    " 5px " +
+    " 10px " +
     allColors[Math.floor(Math.random() * allColors.length)];
   secondBox.style.border = newBorder;
 }
-function changeButtonThree() {
+
+function changeButtonThree(id) {
   thirdBox = document.getElementById("box3");
   thirdBox.style.background =
     allColors[Math.floor(Math.random() * allColors.length)];
@@ -327,17 +329,29 @@ function changeButtonThree() {
 
 function hideButtonOne() {
   firstBox = document.getElementById("box1");
-  firstBox.style.visibility = "hidden";
+  if (firstBox.style.visibility == "hidden") {
+    firstBox.style.visibility = "visible";
+  } else {
+    firstBox.style.visibility = "hidden";
+  }
 }
 
 function hideButtonTwo() {
   secondBox = document.getElementById("box2");
-  secondBox.style.visibility = "hidden";
+  if (secondBox.style.visibility == "hidden") {
+    secondBox.style.visibility = "visible";
+  } else {
+    secondBox.style.visibility = "hidden";
+  }
 }
 
 function hideButtonThree() {
   thirdBox = document.getElementById("box3");
-  thirdBox.style.visibility = "hidden";
+  if (thirdBox.style.visibility == "hidden") {
+    thirdBox.style.visibility = "visible";
+  } else {
+    thirdBox.style.visibility = "hidden";
+  }
 }
 
 function resetAllButton() {

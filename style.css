@@ -18,20 +18,20 @@ h4 {
   width: 25px;
   height: 75px;
   background-color: red;
-  border: solid 2px black;
+  border: solid 10px black;
 }
 
 .box2 {
-  height: 75px;
   width: 25px;
+  height: 75px;
   background-color: rgb(29, 4, 139);
-  border: dotted 4px pink;
+  border: dotted 5px pink;
   margin: 0 20px;
 }
 
 .box3 {
   width: 25px;
   height: 75px;
-  background-color: rgb(1, 77, 1);
-  border: dotted 2px purple;
+  background-color: rgb(196, 88, 0);
+  border: dotted 20px purple;
 }
