@@ -298,33 +298,33 @@ function changeButtonOne(id) {
   firstBox = document.getElementById("box1");
   firstBox.style.background =
     allColors[Math.floor(Math.random() * allColors.length)];
-  newBorder =
+     newBorder =
     allBorders[Math.floor(Math.random() * allColors.length)] +
     "25px" +
     allColors[Math.floor(Math.random() * allColors.length)];
-  firstBox.style.border = newBorder;
+     firstBox.style.border = newBorder;
 }
 
 function changeButtonTwo(id) {
   secondBox = document.getElementById("box2");
   secondBox.style.background =
     allColors[Math.floor(Math.random() * allColors.length)];
-  newBorder =
+     newBorder =
     allBorders[Math.floor(Math.random() * allColors.length)] +
     " 10px " +
     allColors[Math.floor(Math.random() * allColors.length)];
-  secondBox.style.border = newBorder;
+     secondBox.style.border = newBorder;
 }
 
 function changeButtonThree(id) {
   thirdBox = document.getElementById("box3");
   thirdBox.style.background =
     allColors[Math.floor(Math.random() * allColors.length)];
-  newBorder =
+      newBorder =
     allBorders[Math.floor(Math.random() * allColors.length)] +
     " 10px " +
     allColors[Math.floor(Math.random() * allColors.length)];
-  thirdBox.style.border = newBorder;
+      thirdBox.style.border = newBorder;
 }
 
 function hideButtonOne() {
